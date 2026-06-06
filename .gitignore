@@ -1,0 +1,24 @@
+# Credenciais — nao pode versionar
+.env
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Dados temporários
+data/*.json
