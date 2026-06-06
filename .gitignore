@@ -13,6 +13,7 @@ env/
 
 # IDEs
 .vscode/
+*.iml
 .idea/
 *.swp
 
@@ -22,3 +23,4 @@ Thumbs.db
 
 # Dados temporários
 data/*.json
+
