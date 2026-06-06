@@ -1,0 +1,62 @@
+[
+  {
+    "nome": "Operação Normal",
+    "descricao": "Todos os parâmetros dentro dos ranges nominais.",
+    "dados": {
+      "sensor_termico": 28.5,
+      "sensor_optico": 97.3,
+      "buffer_imagens": 12,
+      "geolocalizacao": 3.2,
+      "energia": 82.0,
+      "status_geral": "NOMINAL"
+    }
+  },
+  {
+    "nome": "Foco de Incêndio Crítico",
+    "descricao": "Sensor térmico acima de 70°C — foco ativo detectado.",
+    "dados": {
+      "sensor_termico": 83.7,
+      "sensor_optico": 91.0,
+      "buffer_imagens": 38,
+      "geolocalizacao": 4.5,
+      "energia": 71.0,
+      "status_geral": "ALERTA — FOCO DE CALOR DETECTADO"
+    }
+  },
+  {
+    "nome": "Sensor Óptico Degradado",
+    "descricao": "Sensor óptico abaixo de 60% — imagens comprometidas.",
+    "dados": {
+      "sensor_termico": 31.2,
+      "sensor_optico": 48.6,
+      "buffer_imagens": 22,
+      "geolocalizacao": 5.1,
+      "energia": 66.0,
+      "status_geral": "ALERTA — DEGRADAÇÃO DO SENSOR ÓPTICO"
+    }
+  },
+  {
+    "nome": "Energia Crítica",
+    "descricao": "Energia abaixo de 20% — modo emergência ativado.",
+    "dados": {
+      "sensor_termico": 29.8,
+      "sensor_optico": 93.5,
+      "buffer_imagens": 18,
+      "geolocalizacao": 6.7,
+      "energia": 14.2,
+      "status_geral": "ALERTA — ENERGIA CRÍTICA"
+    }
+  },
+  {
+    "nome": "Buffer Saturado + Foco",
+    "descricao": "Múltiplos alertas simultâneos — cenário de alta pressão operacional.",
+    "dados": {
+      "sensor_termico": 74.3,
+      "sensor_optico": 88.0,
+      "buffer_imagens": 127,
+      "geolocalizacao": 8.2,
+      "energia": 55.0,
+      "status_geral": "CRITICO — MÚLTIPLOS ALERTAS"
+    }
+  }
+]
