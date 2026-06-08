@@ -93,11 +93,14 @@ class MissionEngine:
         # coleta dados frescos, avalia alertas e manda tudo pra IA responder
 
         # coletagem de dados
-        dados = telemetria.coletar()
-        resultado = alertas.avaliar(dados)
-
-        self._ultimo_dados = dados
-        self._ultimo_resultado_alertas = resultado
+        if self._ultimo_dados:
+            dados = self._ultimo_dados
+            resultado = self._ultimo_resultado_alertas
+        else:
+            dados = telemetria.coletar()
+            resultado = alertas.avaliar(dados)
+            self._ultimo_dados = dados
+            self._ultimo_resultado_alertas = resultado
 
         resumo_ciclo = (
             f"Ciclo #{dados.get('ciclo_orbital')} | "
@@ -111,7 +114,7 @@ class MissionEngine:
         if len(self._historico) > 3:
             self._historico.pop(0)
 
-        # monta o historico dos ciclos anteriores pra dar contexto pra IA
+        # monta o historico dos ciclos anteriore
         historico_texto = ""
         if len(self._historico) > 1:
             historico_texto = "\n=== HISTÓRICO DOS ÚLTIMOS CICLOS ORBITAIS ===\n"
@@ -124,16 +127,16 @@ class MissionEngine:
         alertas_texto = alertas.formatar_para_prompt(resultado)
 
         prompt = f"""
-{historico_texto}
-{telemetria_texto}
-
-{alertas_texto}
-
-=== PERGUNTA DO OPERADOR ===
-{pergunta_usuario}
-============================
-
-Responda como GAIA, analista de missão do EnviroSat. Siga a estrutura: diagnóstico técnico → impacto terrestre → recomendação de ação.
-""".strip()
+        {historico_texto}
+        {telemetria_texto}
+        
+        {alertas_texto}
+        
+        === PERGUNTA DO OPERADOR ===
+        {pergunta_usuario}
+        ============================
+        
+        Responda como GAIA, analista de missão do EnviroSat. Siga a estrutura: diagnóstico técnico → impacto terrestre → recomendação de ação.
+        """.strip()
 
         return llm(prompt, system=self.system_prompt)
