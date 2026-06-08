@@ -53,6 +53,7 @@ python main.py
 ## Demonstração
 ![Banner e interface inicial](assets/screenshot_banner.png)
 ![GAIA analisando pergunta do usuario](assets/screenshot_analise.png)
+![Painel help](assets/screenshot_painel_help.png)
 
 ## System Prompt
 O system prompt completo está em `prompts/system_prompt.md`. Ele define a identidade da GAIA, as três camadas obrigatórias de resposta (diagnóstico técnico, impacto terrestre e recomendação de ação), as personas atendidas e as restrições de comportamento — incluindo a instrução de nunca usar markdown na saída para garantir formatação limpa no terminal.
