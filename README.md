@@ -85,8 +85,8 @@ Dado-como-serviço (DaaS) — os dados de telemetria processados e os relatório
 - A GAIA pode apresentar pequenas variações de tom entre respostas consecutivas por ser um modelo não determinístico
 
 ## Vídeo de demonstração
-🎬 [Assistir demonstração no YouTube]([https://youtu.be/WKCgQUByq_Y])
+[Assistir demonstração no YouTube](https://youtu.be/WKCgQUByq_Y)
 > Configurado como "Não listado" no YouTube.
 
 ## Repositório
-🔗 [Acessar repositório no GitHub]([https://github.com/KauanneOliveira/mission-control-ai.git])
+[Acessar repositório no GitHub](https://github.com/KauanneOliveira/mission-control-ai.git)
