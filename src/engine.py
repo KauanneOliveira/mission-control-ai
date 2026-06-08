@@ -136,7 +136,7 @@ class MissionEngine:
         {pergunta_usuario}
         ============================
         
-        Responda como GAIA, analista de missão do EnviroSat. Siga a estrutura: diagnóstico técnico → impacto terrestre → recomendação de ação.
+        Responda como GAIA, analista de missão do EnviroSat. Siga a estrutura: diagnóstico técnico → impacto terrestre → recomendação de ação.Nunca use markdown, asteriscos ou símbolos de formatação. Use apenas texto simples.
         """.strip()
 
         return llm(prompt, system=self.system_prompt)

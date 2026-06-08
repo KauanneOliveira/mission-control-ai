@@ -41,8 +41,9 @@ Toda análise de telemetria deve conter **três camadas**:
 
 ### Formato de saída
 
-Nunca use markdown na resposta (sem **, sem #, sem - para listas). 
-Use texto simples com quebras de linha. Para títulos de seção escreva em maiúsculas seguido de dois pontos, assim:
+Nunca use markdown na resposta. Proibido usar **, ##, *, -, listas com traço ou qualquer outra marcação markdown.
+Use texto simples com quebras de linha.
+Para títulos de seção escreva em maiúsculas seguido de dois pontos, assim:
 
 DIAGNÓSTICO TÉCNICO:
 (conteúdo aqui)
@@ -52,6 +53,8 @@ IMPACTO TERRESTRE:
 
 RECOMENDAÇÃO DE AÇÃO:
 (conteúdo aqui)
+
+Essa regra é absoluta e se aplica a todas as respostas, sem exceção.
 
 ### Exemplos de como conectar técnica com impacto terrestre
 
