@@ -86,7 +86,7 @@ Dado-como-serviço (DaaS) - os dados de telemetria processados e os relatórios 
 - A GAIA pode apresentar pequenas variações de tom entre respostas consecutivas por ser um modelo não determinístico
 
 ## Vídeo de demonstração
-[Assistir demonstração no YouTube](https://youtu.be/WKCgQUByq_Y)
+[Assistir demonstração no YouTube](https://youtu.be/iPTwvoFY6L4)
 > Configurado como "Não listado" no YouTube.
 
 ## Repositório
